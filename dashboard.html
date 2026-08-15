@@ -1,0 +1,68 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dashboard · Gestión Académica</title><link rel="stylesheet" href="css/estilos.css"></head><body data-page="dashboard"><div class="app-shell"><div class="star-field" aria-hidden="true"><i style="left:0%;top:0%;animation-delay:0.0s"></i><i style="left:37%;top:61%;animation-delay:0.5s"></i><i style="left:74%;top:22%;animation-delay:1.0s"></i><i style="left:11%;top:83%;animation-delay:1.5s"></i><i style="left:48%;top:44%;animation-delay:2.0s"></i><i style="left:85%;top:5%;animation-delay:2.5s"></i><i style="left:22%;top:66%;animation-delay:3.0s"></i><i style="left:59%;top:27%;animation-delay:0.0s"></i><i style="left:96%;top:88%;animation-delay:0.5s"></i><i style="left:33%;top:49%;animation-delay:1.0s"></i><i style="left:70%;top:10%;animation-delay:1.5s"></i><i style="left:7%;top:71%;animation-delay:2.0s"></i><i style="left:44%;top:32%;animation-delay:2.5s"></i><i style="left:81%;top:93%;animation-delay:3.0s"></i><i style="left:18%;top:54%;animation-delay:0.0s"></i><i style="left:55%;top:15%;animation-delay:0.5s"></i><i style="left:92%;top:76%;animation-delay:1.0s"></i><i style="left:29%;top:37%;animation-delay:1.5s"></i><i style="left:66%;top:98%;animation-delay:2.0s"></i><i style="left:3%;top:59%;animation-delay:2.5s"></i><i style="left:40%;top:20%;animation-delay:3.0s"></i><i style="left:77%;top:81%;animation-delay:0.0s"></i><i style="left:14%;top:42%;animation-delay:0.5s"></i><i style="left:51%;top:3%;animation-delay:1.0s"></i><i style="left:88%;top:64%;animation-delay:1.5s"></i><i style="left:25%;top:25%;animation-delay:2.0s"></i><i style="left:62%;top:86%;animation-delay:2.5s"></i><i style="left:99%;top:47%;animation-delay:3.0s"></i><i style="left:36%;top:8%;animation-delay:0.0s"></i><i style="left:73%;top:69%;animation-delay:0.5s"></i><i style="left:10%;top:30%;animation-delay:1.0s"></i><i style="left:47%;top:91%;animation-delay:1.5s"></i><i style="left:84%;top:52%;animation-delay:2.0s"></i><i style="left:21%;top:13%;animation-delay:2.5s"></i><i style="left:58%;top:74%;animation-delay:3.0s"></i><i style="left:95%;top:35%;animation-delay:0.0s"></i><i style="left:32%;top:96%;animation-delay:0.5s"></i><i style="left:69%;top:57%;animation-delay:1.0s"></i><i style="left:6%;top:18%;animation-delay:1.5s"></i><i style="left:43%;top:79%;animation-delay:2.0s"></i><i style="left:80%;top:40%;animation-delay:2.5s"></i><i style="left:17%;top:1%;animation-delay:3.0s"></i><i style="left:54%;top:62%;animation-delay:0.0s"></i><i style="left:91%;top:23%;animation-delay:0.5s"></i><i style="left:28%;top:84%;animation-delay:1.0s"></i><i style="left:65%;top:45%;animation-delay:1.5s"></i><i style="left:2%;top:6%;animation-delay:2.0s"></i><i style="left:39%;top:67%;animation-delay:2.5s"></i><i style="left:76%;top:28%;animation-delay:3.0s"></i><i style="left:13%;top:89%;animation-delay:0.0s"></i><i style="left:50%;top:50%;animation-delay:0.5s"></i><i style="left:87%;top:11%;animation-delay:1.0s"></i><i style="left:24%;top:72%;animation-delay:1.5s"></i><i style="left:61%;top:33%;animation-delay:2.0s"></i><i style="left:98%;top:94%;animation-delay:2.5s"></i></div>
+        <aside class="sidebar" id="sidebar">
+          <div class="brand"><div class="brand-mark">SA</div><div><h1>Gestión Académica</h1><small>Panel inteligente</small></div></div>
+          <nav class="nav">
+            <button class="active" data-section="dashboard">⌂ Dashboard</button>
+            <button data-section="students">♙ Estudiantes</button>
+            <button data-section="courses">▣ Cursos</button>
+            <button data-section="reports">▤ Reportes</button>
+            <button data-section="storage">⇅ Respaldo JSON</button>
+            <button data-section="cookies">◌ Cookies</button>
+            <button data-section="history">◷ Historial</button>
+            <button data-section="contact">✉ Contacto</button>
+          </nav>
+        </aside><main class="main">
+          <header class="topbar"><div class="topbar-left"><button class="menu-toggle" id="menuToggle">☰</button><div><div class="eyebrow">Sistema Web Inteligente</div><h2>Gestión académica</h2></div></div><div class="user-chip"><div class="avatar">U</div><div><strong id="userName">Usuario</strong><small id="userRole" style="display:block;color:var(--muted)">Rol</small></div><button class="btn ghost" id="logoutBtn">Salir</button></div></header>
+<section id="dashboard" class="app-section active">
+  <div class="hero"><div class="eyebrow">Centro de mando</div><h3>Visión general del rendimiento</h3><p>Consulta indicadores, actividad académica y reportes en tiempo real. La información se conserva localmente sin depender de un servidor externo.</p><div class="constellation"><span>✦</span><div class="line"></div><span>✧ Ruta académica</span><div class="line"></div><span>✦</span></div></div>
+  <div class="cards">
+    <div class="card metric"><small>Total estudiantes</small><strong id="totalStudents">0</strong></div>
+    <div class="card metric"><small>Cursos activos</small><strong id="activeCourses">0</strong></div>
+    <div class="card metric"><small>Promedio institucional</small><strong id="institutionAvg">0</strong></div>
+    <div class="card metric"><small>Aprobados</small><strong id="approved">0</strong></div>
+    <div class="card metric"><small>Reprobados</small><strong id="failed">0</strong></div>
+  </div>
+  <div class="grid-2">
+    <div class="panel"><div class="panel-head"><h3>Reporte académico</h3><span class="status ok">Dinámico</span></div><div style="overflow:auto"><table><thead><tr><th>Carnet</th><th>Nombre</th><th>Carrera</th><th>Promedio</th></tr></thead><tbody id="dashboardTable"></tbody></table></div></div>
+    <div class="panel"><div class="panel-head"><h3>Estadísticas</h3></div><div class="stats-list"><div class="stat-row"><span>Mayor promedio</span><strong id="highestStudent">—</strong></div><div class="stat-row"><span>Menor promedio</span><strong id="lowestStudent">—</strong></div><div class="stat-row"><span>Sesión actual</span><strong id="stayTime">0 min</strong></div></div></div>
+  </div>
+</section>
+<section id="students" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Gestión de estudiantes</h3><small class="help">Alta, consulta y eliminación con validación.</small></div><input id="studentSearch" class="input" placeholder="Buscar por nombre, carnet o carrera"></div>
+  <form id="studentForm" class="form-grid">
+    <div class="field"><label>Nombre completo</label><input name="nombre" class="input" required placeholder="Nombre Apellido"></div>
+    <div class="field"><label>Correo institucional</label><input name="correo" class="input" required placeholder="correo@universidad.edu"></div>
+    <div class="field"><label>Fecha de nacimiento</label><input name="fechaNacimiento" type="date" class="input" required></div>
+    <div class="field"><label>Carnet / identificador</label><input name="carnet" class="input" required placeholder="EST-004"></div>
+    <div class="field"><label>Carrera</label><input name="carrera" class="input" required placeholder="Ingeniería..."></div>
+    <div class="field" style="align-self:end"><button class="btn" type="submit">Registrar estudiante</button></div>
+  </form></div>
+  <div class="panel"><div style="overflow:auto"><table><thead><tr><th>Carnet</th><th>Nombre</th><th>Carrera</th><th>Edad</th><th>Promedio</th><th>Estado</th><th>Acciones</th></tr></thead><tbody id="studentsTable"></tbody></table></div></div>
+</section>
+<section id="courses" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Administración de cursos</h3></div><input id="courseSearch" class="input" placeholder="Buscar curso o código"></div>
+  <form id="courseForm" class="form-grid">
+    <div class="field"><label>Código</label><input name="codigo" class="input" required placeholder="WEB301"></div>
+    <div class="field"><label>Nombre del curso</label><input name="nombre" class="input" required></div>
+    <div class="field"><label>Créditos</label><input name="creditos" type="number" min="1" max="20" class="input" required></div>
+    <div class="field" style="align-self:end"><button class="btn" type="submit">Crear curso</button></div>
+  </form></div>
+  <div class="panel"><div style="overflow:auto"><table><thead><tr><th>Código</th><th>Nombre</th><th>Créditos</th><th>Notas</th><th>Promedio</th><th>Estado</th></tr></thead><tbody id="coursesTable"></tbody></table></div></div>
+</section>
+<section id="reports" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Reportes académicos</h3><small id="reportSummary" class="help"></small></div><button class="btn secondary" onclick="downloadJSON('reporte-academico.json',calcStats())">Exportar reporte</button></div><div style="overflow:auto"><table><thead><tr><th>Carnet</th><th>Nombre</th><th>Carrera</th><th>Promedio</th><th>Estado</th></tr></thead><tbody id="reportsTable"></tbody></table></div></div>
+</section>
+<section id="storage" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Persistencia y respaldo</h3><p class="help">localStorage mantiene usuarios, estudiantes, cursos e historial. sessionStorage conserva datos de la sesión actual.</p></div><div class="toolbar"><button id="exportBtn" class="btn">Exportar JSON</button><label class="btn secondary">Importar JSON<input id="importFile" type="file" accept="application/json" hidden></label></div></div><pre id="storagePreview" class="code-box"></pre></div>
+</section>
+<section id="cookies" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Gestión de cookies</h3><p class="help">Puedes visualizar, modificar o eliminar las cookies del sistema.</p></div><button id="clearCookiesBtn" class="btn danger">Eliminar todas</button></div><div style="overflow:auto"><table><thead><tr><th>Nombre</th><th>Valor</th><th>Acciones</th></tr></thead><tbody id="cookieTable"></tbody></table></div></div>
+</section>
+<section id="history" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Historial de actividades</h3><p class="help">Registro cronológico generado con Date.</p></div></div><div style="overflow:auto"><table><thead><tr><th>Fecha</th><th>Usuario</th><th>Acción</th><th>Detalle</th></tr></thead><tbody id="historyTable"></tbody></table></div></div>
+</section>
+<section id="contact" class="app-section">
+  <div class="panel"><div class="panel-head"><div><h3>Contacto</h3><p class="help">Formulario funcional de contacto, procesado localmente.</p></div></div>
+  <form id="contactForm" class="form-grid"><div class="field"><label>Nombre</label><input name="nombre" class="input" required></div><div class="field"><label>Correo</label><input name="correo" class="input" type="email" required></div><div class="field full"><label>Asunto</label><input name="asunto" class="input" required></div><div class="field full"><label>Mensaje</label><textarea name="mensaje" class="textarea" rows="6" required minlength="10"></textarea></div><div class="field full"><button class="btn" type="submit">Enviar mensaje</button></div></form></div>
+</section>
+<div class="footer">HTML5 · CSS3 · JavaScript ES6+ · Datos locales del navegador</div></main></div><div id="toast" class="toast"></div><script src="js/app.js"></script></body></html>
