@@ -27,8 +27,8 @@ Autenticación y registro, validaciones RegExp, fortaleza de contraseña, POO co
 
 ### GitHub y Netlify
 El proyecto está preparado para GitHub y Netlify. Estos enlaces deben completarse al publicar:
-- Repositorio GitHub: `PENDIENTE_DE_PUBLICAR`
-- Sitio Netlify: `PENDIENTE_DE_PUBLICAR`
+- Repositorio GitHub: `chipper-dodol-e83075.netlify.app`
+- Sitio Netlify: `chipper-dodol-e83075.netlify.app`
 
 ### Commits sugeridos
 1. Estructura inicial.
